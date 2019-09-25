@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-   <!---Codificación de caracteres/tildes--->
     <meta charset="UTF-8">
-    
     <!---Titulo de la WEB--->
-    <title>Curso PWA - Ángel Cruz WEB</title>
+    <title>Curso PWA</title>
+    
+    <!--Viewport Responsive-->
+    <meta name="viewport" content="width=device-with, initial-scale=1.0, maximun-scale=1.0, user-scalabe=no">
     
      <!---Icono de la web--->
-    <link rel="shurtcut icon" type="image/png" href="img/favicon2.png"/> 
+    <link rel="shurtcut icon" type="image/png" href="img/favicon2.png"/>
+
+
+     <!--Color de la Apicación-->
+     <meta name="theme-color" content="#FB314E">
+     <!--Optimizacion Movil-->
+     <meta name="MobileOptimized" content="width">
+     <meta name="HandheldFriendly" content="true">
+
+     <!--Meta etiquetas PWA para Apple-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank-translucent">
+    <link rel="apple-touch-icon" href="img/favicon2.png">
+    <link rel="apple-touch-startup-image" href="img/favicon2.png">
+
+    <!--Configuracion General PWA-->
+    <link rel="manifest" href="manifest.json">
+    
+
+     <!---Hojas de Estilos--->
     <link rel="stylesheet" href="css/styles.css"/>
+    <!---JQuery--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!---Script--->
+    <script src="main.js"></script>
+
 </head>
 <body>
-    <header id="main-header">
-       <div class="container">
-        <div id="logo"> 
-            <h1>Ángel Cruz WEB</h1>
-        </div>
-            <div id="menu">
-                <ul>
-                    <li>
-                        <a href="#">
-                            Inicio
-                        </a>
+   <header id="main-header">
+      <div class="container">
+           <div id="logo">
+               <h1>ANGEL CRUZ APPS</h1>
+           </div>
+           <div id="menu">
+               <ul>
+                   <li>
+                       <a href="#main-header">
+                       Inicio
+                       </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            Servicios
-                        </a>
-                    </li>
-                    <li>
-                        <a href=" #">
-                            Videos
-                        </a>
-                    </li> 
                      <li>
-                        <a href="#">
-                            Contacto
-                        </a>
+                        <a href="#services">
+                          Servicios
+                           </a>
+                        </li>
+                     <li>
+                       <a href="#videos">
+                       Videos
+                       </a>
                     </li>
-                </ul>
-            </div> <!--End menu -->
-        </div> <!--End container -->
-    </header>
-    
-    <div id="slider">
+                     <li>
+                       <a href="#footer">
+                      Contacto
+                       </a>
+                    </li>
+               </ul>
+           </div><!--End menu -->
+       </div><!--End container -->
+   </header>
+   <div class="clearfix"></div>
+   
+   <div id="slider">
        <div class="container">
-           <h2>DESARROLLO DE APLICACIONES PWA, IOS & ANDROID</h2>
+           <h2>Desarrollador WEB y APPS</h2>
        </div>
-    </div>
+   </div>
+    
     <div id="services">
+       <div class="container">
         <h2 class="subheader">Servicios</h2>
         <div class="service">
             <img src="img/1.png">
@@ -71,66 +99,68 @@
             <p>
                 Ofrezco servicios de desarrollo con las mejores tecnologias web
             </p>
-        </div><!---End servicios --->
-    </div> <!---End servicios --->
+        </div>
+        </div><!--End Container-->
+        
+    </div><!--End Servicios-->
     
     <div class="clearfix"></div>
     
     <div id="videos">
         <div class="container">
+           <h2 class="subheader">Videos</h2>
             <div class="video">
-                
-                <h2 class="subheader">Videos</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9fwkpxr3Dw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>
-                        Aprende lo fundamental de la programación y de JavaScript. Uno de los lenguajes más usados y demandados actualmente que nos permite añadir dinamismo y contenido interactivo a una web. Te enseñaré como empezar en JavaScript y como trabajar con variables, operadores, estructuras de control, arrays y mucho más. Todo en 15 minutos, desde cero y paso a paso.
-                    </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9fwkpxr3Dw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                  Aprende lo fundamental de la programación y de JavaScript. Uno de los lenguajes más usados y demandados actualmente que nos permite añadir dinamismo y contenido interactivo a una web.  
+                </p>
             </div>
-              <div class="video">
-                
-                <h2 class="subheader">Videos</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SuX4AXU-s4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>
-                        En este vídeo vamos a hablar acerca de los pasos que hay que seguir para convertirte en un desarrollar web en 2019 de la forma más rápida, fácil y desde cero posible.
-                    </p>
+            
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SuX4AXU-s4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    En este vídeo vamos a hablar acerca de los pasos que hay que seguir para convertirte en un desarrollar web en 2019 de la forma más rápida, fácil y desde cero posible.
+                </p>
             </div>
-              <div class="video">
-                
-                <h2 class="subheader">Videos</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aecWgJzKMXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>
-                        En este vídeo voy a buscar trabajo de desarrollador web en mexico usando linkedin. Comprobaremos que las estadísticas de stackoverflow a veces se cumplen y otras veces no, buscaremos que quieren las empresas en realidad.
-                    </p>
+            
+            <div class="video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/aecWgJzKMXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    En este vídeo voy a buscar trabajo de desarrollador web en mexico usando linkedin. Comprobaremos que las estadísticas de stackoverflow a veces se cumplen y otras veces no, buscaremos que quieren las empresas en realidad.
+                </p>
             </div>
-        </div> 
-        </div>       
-    </div><!--End Videos --->
+            
+        </div>
+    </div> <!--End Videos-->
     
     <div class="clearfix"></div>
     
-    <footer>
+    <footer id="footer">
         <div class="container">
             <h2 class="subheader">Contacto</h2>
-            <p>Enviame un mensaje en cualquiera de las redes sociales :)</p>
-            <ul>
+            <p>Enviame un mensaje en cualquiera de estas redes sociales :) </p>
+            <ul id="networks">
                 <li>
-                   <a href="#">
-                       <img src="img/twitter.png" >
-                   </a>
+                    <a href="">
+                        <img src="img/twitter.png" >
+                    </a>
                 </li>
                 <li>
-                   <a href="#">
-                       <img src="img/facebook.png" >
-                   </a>
+                    <a href="">
+                        <img src="img/facebook.png" >
+                    </a>
                 </li>
                 <li>
-                   <a href="#">
-                       <img src="img/instagram.png" >
-                   </a>
+                    <a href="">
+                        <img src="img/instagram.png" >
+                    </a>
                 </li>
             </ul>
+            
+            <div class="clearfix"></div>
         </div>
     </footer>
     
+    
 </body>
-</html> 
+</html>
